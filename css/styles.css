@@ -1,0 +1,302 @@
+:root {
+   --primery-text-color: #757575fa;
+   --hiro-color: #4d4949fa;
+   --bagraun-color: #75757550;
+   --title-text-color: #212121;
+   --title-text-Letter: rgba(33, 33, 33, 1);
+   --logo-text-color: #FFFFFF;
+   --team-background-color: #F5F4FA;
+   --nav-list: #c5c1da38;
+   --footer-background-color: #2f303aa1;
+   --team-box-shadow-one: rgba(0, 0, 0, 0.12);
+   --team-box-shadow-two: rgba(0, 0, 0, 0.14);
+   --team-box-shadow-three: rgba(0, 0, 0, 0.2);
+}
+/* Основні налаштування */
+body {
+   font-family:'Roboto', 'Segoe UI', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', 
+    'sans-serif';
+    background-image: linear-gradient(var(--bagraun-color), 
+     var(--team-background-color));
+}
+a {text-decoration: none;}
+ul, ol {
+   list-style: none;
+   padding: 0px;
+   margin: 0px;
+}
+h1, h2, h3, p {
+   /* padding: 0px; */
+   margin: 0px;   
+}
+p {
+   padding: 0px;
+   margin: 0px;
+}
+img {
+   display: block;
+   margin: 0px;
+   padding: 0px;
+}
+.header {
+   display: flex;
+}
+
+.container {
+max-width: 1200px;
+}
+
+/* Налаштування навігації */
+.nav {
+display: flex;
+   margin-left: 70px;
+   margin-bottom: 30px;
+}
+
+.logo {
+   font-family: 'Ms Madi';
+   font-size: 80px;
+   color: var(--title-text-color);
+   font-weight: 700;
+   padding-top: 20px;
+}
+.logo--color {
+color: var(--primery-text-color);
+font-family: 'Ms Madi';
+}
+.site-nav {
+display: flex;
+margin-left: 150px;
+margin-right: -40px;
+padding-top: 40px;
+}
+.site-nav__list {
+   margin-right: 40px;
+}
+/* .site-nav__link::after {
+   content: '';
+  display: flex;
+
+   /* width: 0px; */
+   /* height: 4px;
+   background-color: currentColor;
+
+   border-radius: 2px; */
+   
+   /* animation: loader 2s infinite ease-in-out; */
+  
+/* }
+.site-nav__list:hover::after { */
+   /* animation: opacity 2s infinite ease-in-out; */
+   
+   /* animation: weight 2s infinite ease-in-out;
+}  */
+
+
+
+.site-nav__link {
+   position: relative;
+   color: var(--primery-text-color);
+   font-family: 'Raleway';
+   font-size: 40px;
+   font-weight: 500;
+}
+
+.site-nav__link:hover {
+   color: var(--title-text-color);
+   animation: opacity 2s infinite ease-in-out;
+   /* animation: weight 2s infinite ease-in-out; */
+}
+.site-nav__link:focus {
+   color: var(--title-text-color);
+   animation: opacity 2s infinite ease-in-out;
+   /* animation: weight 2s infinite ease-in-out; */
+}
+
+
+/* Врапер */
+ .wrapper {
+   position: relative;
+   animation: opacity 6s infinite ease-in-out;
+   overflow: hidden;
+   
+   }
+      .wrapper__box {
+       position: absolute;
+       top: auto;
+       left: auto;
+       width: 180px;
+       height: auto;
+       background-color: var(--nav-list);
+       border: #2e282819 solid 1px;
+       border-radius: 10px;
+   
+       }
+    
+      .wrapper__text {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 40px;
+      letter-spacing: 1.5;
+      color: var(--title-text-Letter);
+      text-align: center;
+      padding-left: 10px;
+      }
+
+      .wrapper__text:hover,
+      .wrapper__text:focus {
+         color: var(--primery-text-color); 
+      }
+
+/* hiro */
+
+.hiro {
+   margin-bottom: 30px;
+   max-width: 100%;
+   max-height: 1000px;
+   display: flex;
+   justify-content: space-between;
+   
+}
+
+.hero__name {
+   position: absolute;
+   left: 90px;
+   top: 200px;
+   padding-top: 30px;
+   font-family: 'Open Sans';
+   font-size: 50px;
+   font-weight: 900;
+   text-align: center;
+   color: var(--hiro-color);
+}
+
+.hiro__biography {
+   width: 100%;
+   height: 800px;
+   margin-left: 20px;
+  margin-right: 40px;
+   background-image:url('../images/fon.jpeg'), linear-gradient(var(--nav-list), var(--team-background-color));
+   border-radius: 40px;
+   box-shadow: 0px 1px 1px var(--team-box-shadow-one), 
+   0px 4px 4px var(--portfolio-color-one), 
+   1px 4px 6px var(--portfolio-color-two);
+}
+.hiro__biography--title {
+   padding-top: 30px;
+   padding-right: 250px;
+   font-family: 'Open Sans';
+   font-size: 60px;
+   font-weight: 900;
+   text-align: right;
+   color: var(--hiro-color);
+   box-shadow: 0px 1px 1px var(--team-box-shadow-one), 
+   0px 4px 4px var(--portfolio-color-one), 
+   1px 4px 6px var(--portfolio-color-two);
+}
+.hiro__biography--text {
+   display: inline-block;
+   padding-top: 30px;
+   padding-left: 30px;
+   padding-right: 80px;
+   padding-bottom: 30px;
+   margin-left: 1000px;
+   text-align: right;
+   font-family: 'Open Sans';
+   font-size: 30px;
+   font-weight: 500;
+   color: var(--hiro-color);
+}
+
+.footer-card {
+   max-width: 100%;
+   height: 300px;
+   background-image: linear-gradient(var(--title-text-Letter), 
+   var(--team-background-color));
+   border-radius: 40px;
+   box-shadow: 0px 1px 1px var(--team-box-shadow-one), 
+        0px 4px 4px var(--portfolio-color-one), 
+        1px 4px 6px var(--portfolio-color-two);
+}
+.footer__text { 
+   display: inline-block;
+   padding-top: 60px;
+   padding-left: 80px;
+   padding-right: 80px;
+   padding-bottom: 30px;
+   text-align: center;
+   font-family: 'Open Sans';
+   font-size: 30px;
+   font-weight: 500;
+   color: var(--team-background-color);}
+   .footer__right {
+      display: inline-block;
+     margin-left: 1580px;
+    
+   font-family: 'Open Sans';
+   font-size: 25px;
+   font-weight: 300;
+   color: var(--footer-background-color);
+   }
+
+/* Соціальні мережі */
+
+   .social {
+      display: flex;
+      padding-top: 30px;
+      justify-content: center;
+      margin-top: 16px;
+      margin-left: 150px;
+      }
+              .social--footer {
+              margin-top: 0px; 
+              }
+          .social__itam {
+          width: 54px;
+          height: 54px;
+          margin-left: 30px;
+          }
+          .social__itam--footer {
+          background-image: radial-gradient(var(--team-box-shadow-one), 
+          var(--team-box-shadow-one));
+          border-radius:  360px;
+          transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+          }
+          .social__link {
+          color: var(--logo-text-color);
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          margin-left: 10px;
+          transition: background-color 250ms  cubic-bezier(0.4, 0, 0.2, 1), 
+          color 250ms  cubic-bezier(0.4, 0, 0.2, 1); }
+          .social__link:hover, .social__link:focus {
+              background-color: var(--title-text-color);}
+   
+         
+          .social__link--footer {
+          color: var(--logo-text-color);
+          margin-left: 0px;
+          }
+          .social__icon {
+          width: 25px;
+          height: 25px;
+          fill: currentColor;
+          }
+
+
+
+/* Анімації */
+   @keyframes opacity {
+      0% {opacity: 0,3}
+      50%{opacity: 0,5}
+      100%{opacity: 0,7}}
+
+      @keyframes weight {
+         0% {width: 0px}
+         50%{width: 50px}
+         100%{width: 70px}}
