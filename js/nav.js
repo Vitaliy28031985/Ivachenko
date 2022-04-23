@@ -1,5 +1,6 @@
 
 // Меню фото
+
 const wrapper = document.querySelector('#wrapper'),
 navList = document.querySelector('#link');
 
